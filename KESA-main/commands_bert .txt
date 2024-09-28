@@ -1,0 +1,3 @@
+#### bert 
+srun --gres=gpu:1 python run_sentiment_classifier.py   --do_train   --do_eval  --model_type bert_raw  --model_name_or_path  ../models/bert_base_uncased   --task_name sst-2   --data_dir  ../dataset/SST_2/  --num_train_epochs 3.0    --per_gpu_eval_batch_size 1000  --per_gpu_train_batch_size 32   --max_seq_length 128   --learning_rate 5e-5    --seed  11 
+
